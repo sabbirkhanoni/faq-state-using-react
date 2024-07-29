@@ -14,8 +14,8 @@ export default function Faqs(){
                 return(
                     
                    <div className="border-2 mb-2">
-                    <h2 onClick={()=>setShowAns(faqDataItem.id)} className="m-0 cursor-pointer p-5 text-lg bg-neutral-800 shadow-black shadow-outer shadow-md rounded-full text-white border-none">{i+1}.  {faqDataItem.question}</h2>     
-                    <p className={showAns===faqDataItem.id ? 'duration-500 text-white bg-[#7f57dc] pl-5 rounded-full pt-5 pb-5':'h-0 scale-y-0'}>Ans: {faqDataItem.answer}</p> 
+                    <h2 onClick={()=>setShowAns(faqDataItem.id)} className="m-0 cursor-pointer p-5 text-lg bg-neutral-800 pl-8  shadow-black shadow-outer shadow-md rounded-full text-white text-left">{i+1}. {faqDataItem.question}</h2>     
+                    <p className={showAns===faqDataItem.id ? 'left-6 text-left duration-500 text-white bg-[#7f57dc] pl-8 rounded-full pt-5 pb-5':'h-0 scale-y-0'}>Ans: {faqDataItem.answer}</p> 
                    </div>
                 )
               })}
